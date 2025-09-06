@@ -22,3 +22,5 @@ The Atting need the library TinyWireS(https://github.com/nadavmatalon/TinyWireS)
 
 ![image](Documents/PinFreqIn.png)
 
+Two sketches, one for Arduino Uno/Nano as master,  one for Attiny25/45/85 as slave. 
+If you don't know how to program Attiny, read this: [How to Program an Attiny85 Using a Arduino Uno](https://www.instructables.com/How-to-Program-an-Attiny85-From-an-Arduino-Uno/)
