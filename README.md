@@ -1,2 +1,4 @@
 # Simple-ATtiny25-45-85-Internal-RC-Oscillator-Calibration-Tunning
 It's a simple way to calibrate ATtiny25/45/85's OSCCAL, only need a Arduino Uno/Nano and etc. ..a breadboard and some wires. Then on your serial monitor you wil get a list of OSCCAL and frequency.
+The Attiny(call it slave) uses timer1 to output 100kHz waveform when power on. The Arduino Uno(or Nano... call it master) works a frequency meter to messure the frequency that the slave output. Then the master use I2C to send a request to the slave. Atter received the request, the slave load OSCCAL(that will change the frequency of output waveform) and send the OSCCAL value to master. So the master can display the OSCCAL value the frequency on serial monitor.
+Two libraries were used. One is TinyWireS(https://github.com/nadavmatalon/TinyWireS), the other is FreqCount(https://www.pjrc.com/teensy/td_libs_FreqCount.html).
