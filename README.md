@@ -10,7 +10,7 @@ The Attiny(call it slave) uses timer1 to output 100kHz waveform when power on. T
 **Hardware:**
 ==
 One Arduino Uno/Nano/Pro mini etc., one Attiny25/45/85, one breadboard and some jump wires. The Attiny25/45/85 runs at 8MHz(no fuse changed) .
-![](Documents/Schematic.png
+![image](Documents/Schematic.png)
 
 
 Two libraries were used. One is:
